@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Get the C file name
+CFILE=$1
+
+# Get the output file name
+OFILE=${CFILE%.*}.o
+
+# Compile the C file
+cc -c $CFILE -o $OFILE
